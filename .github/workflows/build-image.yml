@@ -23,7 +23,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/extrange/nuhs-medivoice
-          tags: type=edge
+          tags: |
+            type=edge
+            type=sha
 
       - name: Log in to the Container registry
         uses: docker/login-action@v3
