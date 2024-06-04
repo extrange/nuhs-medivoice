@@ -16,4 +16,4 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
-scripts = { start = "flask --app src/nuhs_medivoice/app.py run -p 8080" }
+scripts = { start = "flask --app src/nuhs_medivoice/app.py run -h 0.0.0.0 -p 8080" }

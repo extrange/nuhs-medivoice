@@ -8,6 +8,6 @@ COPY . .
 
 RUN pip install --user pdm
 
-RUN pdm sync
+RUN python3 -m pdm sync
 
-CMD [ "pdm" "run" "start"]
+CMD python3 -m pdm run start
